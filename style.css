@@ -1,0 +1,53 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #532e8c, #1ec7b6);
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  text-align: center;
+  flex-direction: column;
+}
+
+.container {
+  padding: 20px;
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 20px;
+}
+
+h1 {
+  font-size: 1.3em;
+  margin: 20px;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.4);
+}
+
+.cta-button {
+  background: linear-gradient(145deg, #3b2b99, #7b00ff);
+  padding: 15px 25px;
+  border-radius: 30px;
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  margin: 20px 0;
+  box-shadow: 0 0 20px #7b00ff;
+  animation: glow 2s infinite ease-in-out;
+  display: inline-block;
+}
+
+@keyframes glow {
+  0% { box-shadow: 0 0 10px #7b00ff; }
+  50% { box-shadow: 0 0 25px #fff; }
+  100% { box-shadow: 0 0 10px #7b00ff; }
+}
+
+.warning {
+  color: red;
+  font-weight: bold;
+  text-shadow: 1px 1px black;
+}
