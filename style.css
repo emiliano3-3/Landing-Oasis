@@ -165,12 +165,12 @@ h1 {
 }
 .floating-experience {
   text-align: center;
-  margin-top: 20px;
+  margin-top: 40px;
   animation: glow 2s infinite alternate;
 }
 
 .floating-experience img {
-  width: 100px;
+  width: 200px;
   height: auto;
 }
 
