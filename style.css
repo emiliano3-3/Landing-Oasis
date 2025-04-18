@@ -163,3 +163,22 @@ h1 {
     font-size: 12px;
   }
 }
+.floating-experience {
+  text-align: center;
+  margin-top: 20px;
+  animation: glow 2s infinite alternate;
+}
+
+.floating-experience img {
+  width: 100px;
+  height: auto;
+}
+
+@keyframes glow {
+  0% {
+    filter: drop-shadow(0 0 5px gold);
+  }
+  100% {
+    filter: drop-shadow(0 0 15px gold);
+  }
+}
