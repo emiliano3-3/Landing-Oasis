@@ -51,8 +51,8 @@ h1 {
 #countdown span {
   background: black;
   padding: 5px 8px;
-  border-radius: 6px;
-  margin-left: 20px;
+  border-radius: 20px;
+  margin-left: 4px;
   font-weight: bold;
   font-size: 14px;
 }
