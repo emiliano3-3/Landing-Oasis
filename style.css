@@ -2,85 +2,41 @@
 body {
     margin: 0;
     font-family: sans-serif;
-    background: linear-gradient(to bottom, #5f2c82, #49a09d);
-    overflow-x: hidden;
+    background: linear-gradient(to bottom, #502a9e, #1cc3a5);
+    color: white;
+    text-align: center;
 }
 .urgency-bar {
-    background: red;
+    background-color: red;
     color: white;
     padding: 10px;
-    text-align: center;
     font-weight: bold;
-    display: flex;
-    justify-content: space-between;
-}
-.countdown .square {
-    display: inline-block;
-    background: black;
-    color: white;
-    padding: 5px 10px;
-    margin: 0 2px;
 }
 .logo {
-    display: block;
-    margin: 20px auto;
-    max-width: 150px;
+    width: 120px;
     animation: float 3s ease-in-out infinite;
+}
+.partners img {
+    width: 100px;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(255,255,255,0.5);
+}
+.whatsapp-btn {
+    background: #25d366;
+    color: white;
+    padding: 15px 25px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 20px;
+    transition: transform 0.3s ease;
+}
+.whatsapp-btn:hover {
+    transform: scale(1.05);
 }
 @keyframes float {
     0%, 100% { transform: translateY(0); }
-    50% { transform: translateY(-5px); }
-}
-.brand-logos {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    margin: 10px 0;
-}
-.brand-logos img {
-    height: 60px;
-    filter: drop-shadow(0 0 5px rgba(0,0,0,0.5));
-}
-.cta {
-    text-align: center;
-    margin: 30px 10px;
-    color: white;
-}
-.cta-btn {
-    background-color: #25d366;
-    color: white;
-    padding: 15px 30px;
-    border-radius: 30px;
-    display: inline-block;
-    font-size: 18px;
-    animation: pulse 2s infinite;
-    text-decoration: none;
-}
-@keyframes pulse {
-    0% { transform: scale(1); }
-    50% { transform: scale(1.05); }
-    100% { transform: scale(1); }
-}
-.testimonios {
-    background: rgba(255,255,255,0.05);
-    padding: 20px;
-    margin-top: 30px;
-    position: relative;
-}
-.carousel {
-    display: flex;
-    overflow-x: auto;
-    gap: 15px;
-    padding: 10px 0;
-}
-.carousel img {
-    height: 300px;
-    border-radius: 10px;
-}
-.monedas-bg {
-    position: absolute;
-    bottom: -20px;
-    right: 0;
-    width: 120px;
-    opacity: 0.4;
+    50% { transform: translateY(-10px); }
 }
