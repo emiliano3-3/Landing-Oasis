@@ -16,7 +16,7 @@ body {
 }
 
 .logo {
-  width: 180px;
+  width: 250px;
   margin-bottom: 10px;
   animation: float 3s ease-in-out infinite;
 }
