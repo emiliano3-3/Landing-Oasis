@@ -12,8 +12,10 @@
   <div id="age-gate">
     <div class="gate-box">
       <p>¿Sos mayor de 18 años?</p>
-      <button onclick="enterSite()">Sí</button>
-      <button onclick="window.location.href='https://www.google.com'">No</button>
+      <div class="gate-buttons">
+        <button onclick="enterSite()">Sí</button>
+        <button onclick="window.location.href='https://www.google.com'">No</button>
+      </div>
     </div>
   </div>
 
@@ -26,8 +28,8 @@
 
   <div class="container">
     <img src="logo-oasis.png" alt="Logo Oasis" class="logo floating" />
-    <h1>Jugá con</h1>
 
+    <h1>Jugá con</h1>
     <div class="brands">
       <a href="https://ganaencasa.live/" target="_blank">
         <img src="logo-ganacasa.png" alt="Gana En Casa" />
@@ -82,11 +84,11 @@
     tsParticles.load("tsparticles", {
       fullScreen: { enable: true, zIndex: -1 },
       particles: {
-        number: { value: 50 },
-        color: { value: ["#ff9933", "#ff3300"] },
-        size: { value: 2.5 },
-        move: { enable: true, speed: 0.8 },
-        opacity: { value: 0.4 },
+        number: { value: 55 },
+        color: { value: ["#ff6600", "#ffcc00"] },
+        size: { value: 2 },
+        move: { enable: true, speed: 0.6 },
+        opacity: { value: 0.3 },
         shape: { type: "circle" }
       }
     });

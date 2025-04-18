@@ -16,7 +16,7 @@ body {
 }
 
 .logo {
-  width: 200px;
+  width: 180px;
   margin-bottom: 10px;
   animation: float 3s ease-in-out infinite;
 }
@@ -40,7 +40,7 @@ h1 {
   color: white;
   font-weight: bold;
   font-size: 13px;
-  padding: 6px;
+  padding: 6px 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -50,10 +50,11 @@ h1 {
 
 #countdown span {
   background: black;
-  padding: 4px 6px;
-  border-radius: 4px;
-  margin: 0 2px;
+  padding: 5px 8px;
+  border-radius: 6px;
+  margin-left: 4px;
   font-weight: bold;
+  font-size: 14px;
 }
 
 .cta-button {
@@ -78,13 +79,15 @@ h1 {
 .brands img {
   width: 120px;
   margin: 15px;
-  filter: drop-shadow(0 0 5px white) brightness(1.1);
-  animation: glowLogo 3s ease-in-out infinite alternate;
+  background: transparent;
+  border-radius: 10px;
+  filter: drop-shadow(0 0 6px white) brightness(1.1);
+  animation: glowLogo 4s ease-in-out infinite alternate;
 }
 
 @keyframes glowLogo {
-  from { transform: translateY(0); opacity: 0.8; }
-  to { transform: translateY(-3px); opacity: 1; }
+  from { transform: translateY(0); opacity: 0.85; }
+  to { transform: translateY(-4px); opacity: 1; }
 }
 
 .cta-text {
@@ -108,16 +111,27 @@ h1 {
 }
 
 .gate-box {
-  background-color: #ffcc00;
-  padding: 30px;
-  border-radius: 10px;
+  background: linear-gradient(135deg, #e8b900, #a77900);
+  padding: 40px 30px;
+  border-radius: 20px;
   color: black;
+  font-family: 'Segoe UI', sans-serif;
+  font-size: 18px;
   font-weight: bold;
+  max-width: 90%;
 }
 
-.gate-box button {
+.gate-buttons {
+  margin-top: 20px;
+}
+
+.gate-buttons button {
   margin: 10px;
-  padding: 10px 20px;
+  padding: 12px 24px;
   font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  background-color: black;
+  color: white;
   cursor: pointer;
 }
