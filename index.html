@@ -9,53 +9,48 @@
 <link href="style.css" rel="stylesheet"/>
 <link href="favicon.png" rel="icon" type="image/png"/>
 <style>
+html, body {
+  height: auto;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
 .testimonios-section {
   margin-top: 50px;
   text-align: center;
-  background: url('assets/coins_background.png') no-repeat center bottom;
-  background-size: cover;
-  padding: 30px 0;
+  position: relative;
+  padding: 40px 0;
+  background: transparent;
+}
+.testimonios-section::before {
+  content: "";
+  background-image: url('assets/coin-float.png');
+  background-repeat: repeat-y;
+  background-size: 100px;
+  opacity: 0.08;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300%;
+  animation: coinFall 60s linear infinite;
+  z-index: 0;
+}
+@keyframes coinFall {
+  0% { background-position: 0 0; }
+  100% { background-position: 0 1000px; }
 }
 .testimonios-titulo {
-  font-size: 20px;
-  margin-bottom: 20px;
-  color: white;
-  text-shadow: 0 1px 3px black;
+  position: relative;
+  z-index: 1;
 }
 .carousel {
   position: relative;
   max-width: 90%;
   margin: auto;
   overflow: hidden;
+  z-index: 1;
 }
-.carousel-inner {
-  display: flex;
-  transition: transform 0.5s ease;
-}
-.carousel-item {
-  min-width: 100%;
-  display: none;
-}
-.carousel-item img {
-  width: 100%;
-  max-width: 400px;
-  border-radius: 10px;
-  margin: auto;
-}
-.carousel-control {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0,0,0,0.3);
-  color: white;
-  border: none;
-  font-size: 24px;
-  padding: 10px;
-  cursor: pointer;
-  z-index: 10;
-}
-.carousel-control.prev { left: 10px; }
-.carousel-control.next { right: 10px; }
 </style></head>
 <body>
 <div id="age-gate">
@@ -150,7 +145,6 @@
     requestAnimationFrame(frame);
   })();
 </script>
-
 <div class="testimonios-section">
 <h2 class="testimonios-titulo">Estamos las 24hs para vós, también bonificaciones por recomendación! 🤑🤩</h2>
 <div class="carousel">
