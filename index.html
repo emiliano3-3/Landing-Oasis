@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Oasis</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="favicon.png">
+</head>
+<body>
+  <div id="tsparticles"></div>
+  <div class="container">
+    <img src="logo-oasis.png" alt="Logo Oasis" class="logo floating" />
+    <h1>Hay una forma de ganar que pocos conocen 💎,<br>pero muchos ya están aprovechando 🔥<br><br>no esperes más y hacé click acá abajo 👇🏻</h1>
+    <a href="https://wa.me/5492234362482" class="cta-button">Hablar con un encargado</a>
+    <p class="warning">SOLO MAYORES DE 18 AÑOS</p>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/tsparticles@2/tsparticles.bundle.min.js"></script>
+  <script>
+    tsParticles.load("tsparticles", {
+      fullScreen: { enable: true, zIndex: -1 },
+      particles: {
+        number: { value: 60 },
+        color: { value: "#ffffff" },
+        size: { value: 1.5 },
+        move: { enable: true, speed: 1 },
+        opacity: { value: 0.5 },
+        shape: { type: "circle" }
+      }
+    });
+  </script>
+</body>
+</html>
