@@ -148,7 +148,7 @@ h1 {
   z-index: 0;
 }
 
-/* Correct countdown layout on mobile */
+
 @media (max-width: 600px) {
   .carousel-item img {
     width: 90%;
